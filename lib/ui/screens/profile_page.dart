@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_ui_plant/ui/screens/signin_page.dart';
 import 'package:flutter_ui_plant/ui/screens/widgets/profile_widget.dart';
 import 'package:flutter_ui_plant/utilities/constants.dart';
+import 'package:get/get.dart'; // For GetX navigation
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -58,7 +59,7 @@ class ProfilePage extends StatelessWidget {
               const SizedBox(height: 30),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
+                children: [
                   ProfileWidget(icon: Icons.person, title: 'My Profile'),
                   ProfileWidget(icon: Icons.settings, title: 'Settings'),
                   ProfileWidget(
@@ -67,7 +68,16 @@ class ProfilePage extends StatelessWidget {
                   ),
                   ProfileWidget(icon: Icons.chat, title: 'FAQs'),
                   ProfileWidget(icon: Icons.share, title: 'Share'),
-                  ProfileWidget(icon: Icons.logout, title: 'Log Out'),
+                  GestureDetector(
+                    onTap: () {
+                      // Handle the Log Out action
+                      _logOut(context);
+                    },
+                    child: const ProfileWidget(
+                      icon: Icons.logout,
+                      title: 'Log Out',
+                    ),
+                  ),
                 ],
               ),
             ],
@@ -75,5 +85,17 @@ class ProfilePage extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  // Log out function
+  void _logOut(BuildContext context) {
+    // Clear user session (example: if using GetStorage or SharedPreferences, clear data here)
+    // Example (if using GetStorage or SharedPreferences):
+    // GetStorage().remove('user_token');
+
+    // Navigate to the Login Page
+    Get.offAll(
+      () => const SigninPage(),
+    ); // Correctly reference the capitalized class name
   }
 }

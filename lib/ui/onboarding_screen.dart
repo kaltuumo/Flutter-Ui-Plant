@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_plant/ui/controller/onbording_contoller.dart';
-import 'package:flutter_ui_plant/ui/root_page.dart';
+import 'package:flutter_ui_plant/ui/screens/signin_page.dart';
 import 'package:flutter_ui_plant/ui/screens/widgets/indicator.dart';
 import 'package:flutter_ui_plant/ui/screens/widgets/pages.dart';
 import 'package:flutter_ui_plant/utilities/constants.dart';
@@ -34,7 +34,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               onTap: () {
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (_) => RootPage()),
+                  MaterialPageRoute(builder: (_) => SigninPage()),
                 );
               },
               child: const Text(
@@ -98,7 +98,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   } else {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => RootPage()),
+                      MaterialPageRoute(builder: (context) => SigninPage()),
                     );
                   }
                 },
