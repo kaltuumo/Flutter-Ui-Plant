@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_plant/ui/onboarding_screen.dart';
-import 'package:flutter_ui_plant/ui/screens/signin_page.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
