@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/////// page kaan waxxa lagu muujinayaa onboarding page icons ka and title
 class Pages extends StatelessWidget {
   final String image;
   final String title;

@@ -1,5 +1,3 @@
-/// waxaa laga soo qrisanaa xogta New Plants ka
-
 import 'package:flutter/material.dart';
 
 import 'package:flutter_ui_plant/ui/models/plants.dart';
@@ -7,6 +5,7 @@ import 'package:flutter_ui_plant/ui/screens/detail_page.dart';
 import 'package:flutter_ui_plant/utilities/constants.dart';
 import 'package:page_transition/page_transition.dart';
 
+////////////////// /// waxaa laga soo sameeyay xogta New Plants
 class PlantWidget extends StatelessWidget {
   const PlantWidget({Key? key, required this.index, required this.plantList})
     : super(key: key);
@@ -19,6 +18,7 @@ class PlantWidget extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     return GestureDetector(
+      ///// ///code kaan waxaa laga soo qrisanaa xogta New Plants ka
       onTap: () {
         Navigator.push(
           context,
@@ -28,6 +28,8 @@ class PlantWidget extends StatelessWidget {
           ),
         );
       },
+
+      ///// ///code kaan waxaa laga soo sameeyo xogta New Plants ka
       child: Container(
         decoration: BoxDecoration(
           color: Constants.primaryColor.withOpacity(.1),
@@ -52,6 +54,7 @@ class PlantWidget extends StatelessWidget {
                     shape: BoxShape.circle,
                   ),
                 ),
+                // code kaan wuxuu qaabilsanyahay image ka plant
                 Positioned(
                   bottom: 5,
                   left: 0,
@@ -61,6 +64,7 @@ class PlantWidget extends StatelessWidget {
                     child: Image.asset(plantList[index].imageURL),
                   ),
                 ),
+                // code kaan wuxuu qaabilsanyahay category and plant Name
                 Positioned(
                   bottom: 5,
                   left: 80,
@@ -81,6 +85,8 @@ class PlantWidget extends StatelessWidget {
                 ),
               ],
             ),
+
+            // code kaan wuxuu qaabilsanyahay price ka plant
             Container(
               padding: const EdgeInsets.only(right: 10),
               child: Text(

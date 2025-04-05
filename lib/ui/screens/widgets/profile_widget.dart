@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_plant/utilities/constants.dart';
 
+//////////// page kaan waxxa lagu muujinayaa profile page icons ka and title
 class ProfileWidget extends StatelessWidget {
   final IconData icon;
   final String title;

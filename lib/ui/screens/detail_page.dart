@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_plant/ui/models/plants.dart';
 import 'package:flutter_ui_plant/utilities/constants.dart';
 
+//// page kaan shaqadiisa waa inuu soo aqristaa image click lagu siyay size kiisa image kiisa iyo wixii uu wata dhamaan xogaha loo dhiibay inuu soo aqriyo
 class DetailPage extends StatefulWidget {
   final int plantId;
   const DetailPage({super.key, required this.plantId});
@@ -29,6 +30,8 @@ class _DetailPageState extends State<DetailPage> {
     return Scaffold(
       body: Stack(
         children: [
+          // Close Icon And Favorite Icon ku jira when click row widgets and column widgets
+          // Close Icon and Favorite Icon
           Positioned(
             top: 50,
             left: 20,
@@ -40,6 +43,8 @@ class _DetailPageState extends State<DetailPage> {
                   onTap: () {
                     Navigator.pop(context);
                   },
+
+                  // Close Icon enter when click row widgets and column widgets
                   child: Container(
                     height: 40,
                     width: 40,
@@ -54,6 +59,8 @@ class _DetailPageState extends State<DetailPage> {
                   onTap: () {
                     debugPrint('favorite');
                   },
+
+                  // favarite Icon enter when click row widgets and column widgets
                   child: Container(
                     height: 40,
                     width: 40,
@@ -82,6 +89,7 @@ class _DetailPageState extends State<DetailPage> {
               ],
             ),
           ),
+          // code kaan shaqadiisa waa inuu soo aqristaa image click lagu siyay size kiisa image kiisa iyo wixii uu wata
           Positioned(
             top: 100,
             left: 20,
@@ -100,6 +108,8 @@ class _DetailPageState extends State<DetailPage> {
                       child: Image.asset(_plantList[widget.plantId].imageURL),
                     ),
                   ),
+
+                  // code kaan shaqadiisa waa inuu soo aqristaa markii click lagu row widgets ma column widgets inuu page kaas kusoo aqriyo size ka , humidity ka iyo temperature ka
                   Positioned(
                     top: 10,
                     right: 0,
@@ -131,6 +141,8 @@ class _DetailPageState extends State<DetailPage> {
               ),
             ),
           ),
+
+          // code kaan shaqadiisa waa inuu soo aqristaa markii click lagu row widgets ma column widgets inuu page kaas kusoo aqriyo container ka soo aqrinaayo ratig kiisa iyo price kiisa iyo description kiisa
           Positioned(
             bottom: 0,
             left: 0,
@@ -216,6 +228,7 @@ class _DetailPageState extends State<DetailPage> {
         height: 50,
         child: Row(
           children: [
+            // cart icon code and functionality
             Container(
               height: 50,
               width: 50,
@@ -254,6 +267,7 @@ class _DetailPageState extends State<DetailPage> {
             ),
             const SizedBox(width: 20),
             Expanded(
+              // buy now icon code and functionality
               child: Container(
                 decoration: BoxDecoration(
                   color: Constants.primaryColor,
@@ -281,6 +295,7 @@ class _DetailPageState extends State<DetailPage> {
   }
 }
 
+/// plant feature code
 class PlantFeature extends StatelessWidget {
   final String plantFeature;
   final String title;

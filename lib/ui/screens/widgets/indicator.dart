@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_plant/utilities/constants.dart';
 
+// page code kaan wuxuu  Qaabilsanyahay page animation
 class Indicator extends StatelessWidget {
   final bool isActive;
 

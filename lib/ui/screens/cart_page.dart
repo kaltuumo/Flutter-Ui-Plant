@@ -4,6 +4,8 @@ import 'package:flutter_ui_plant/ui/models/plants.dart';
 import 'package:flutter_ui_plant/ui/screens/widgets/plant_widget.dart';
 import 'package:flutter_ui_plant/utilities/constants.dart';
 
+// CART PAGE
+// code kaan wuxuu muujinayaa liiska dhirta la iibsaday
 class CartPage extends StatefulWidget {
   final List<Plant> addedToCartPlants;
   const CartPage({Key? key, required this.addedToCartPlants}) : super(key: key);

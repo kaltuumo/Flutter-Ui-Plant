@@ -16,6 +16,7 @@ class _FavoritePageState extends State<FavoritePage> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      /// code kaan shaqadiisa waa in uu muujiyo liiska dhirta favorite lasoo dhahay
       body:
           widget.favoritedPlants.isEmpty
               ? Center(

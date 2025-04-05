@@ -4,6 +4,7 @@ import 'package:flutter_ui_plant/ui/screens/widgets/profile_widget.dart';
 import 'package:flutter_ui_plant/utilities/constants.dart';
 import 'package:get/get.dart'; // For GetX navigation
 
+//// code waxaa lagu soo aqrinaa prfile page code
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
 
